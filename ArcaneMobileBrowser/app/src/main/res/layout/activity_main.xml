@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pavan.mobilebrowser.MainActivity"
+    android:background="@drawable/arcane"
+    >
+
+    <TextView
+        android:id="@+id/BrowserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Arcane Browser For Mobile"
+        android:gravity="center"
+        android:textSize="50dp"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="italic"
+        />
+
+    <EditText
+        android:id="@+id/url"
+        android:layout_width="match_parent"
+        android:layout_marginRight="35dp"
+        android:layout_height="40dp"
+        android:textColor="#FFFFFF"
+        android:text="https://www.google.com"
+        android:gravity="center_horizontal"
+        android:backgroundTint="#00FF00"
+        android:hint="Search or type URL"
+        android:textColorHint="#FFFFFF"
+        android:elevation="20dp"
+        />
+
+    <ImageView
+        android:id="@+id/nextpage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/arrowrightbold1"
+        android:background="#000000"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/BrowserName"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressbar1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:indeterminate="false"
+        android:indeterminateOnly="false"
+        android:layout_below="@+id/url"
+        />
+
+
+</RelativeLayout>
