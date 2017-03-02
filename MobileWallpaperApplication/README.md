@@ -8,8 +8,8 @@
    
 
 ## Screenshots of the application
-![1](https://cloud.githubusercontent.com/assets/22826481/23491498/7cd33cba-feb3-11e6-80fd-242fb176d3b5.jpeg)
-![2](https://cloud.githubusercontent.com/assets/22826481/23491497/7cd31e9c-feb3-11e6-8503-1b6293588c3c.jpeg)
-![3 1](https://cloud.githubusercontent.com/assets/22826481/23491496/7cd26ede-feb3-11e6-8967-b28558a1f452.jpeg)
-![4](https://cloud.githubusercontent.com/assets/22826481/23491499/7cd35da8-feb3-11e6-92a9-c2f465f663fd.jpeg)
-![5](https://cloud.githubusercontent.com/assets/22826481/23491495/7cd096e0-feb3-11e6-94bd-0f65291f86e6.jpeg)
+![1](https://cloud.githubusercontent.com/assets/22826481/23501997/040a2176-feeb-11e6-8c1b-98b7603b703d.PNG)
+![2](https://cloud.githubusercontent.com/assets/22826481/23501994/04083654-feeb-11e6-94a8-f4d4f4f226c0.PNG)
+![3](https://cloud.githubusercontent.com/assets/22826481/23501996/0409cb72-feeb-11e6-91e4-eacbea405af4.PNG)
+![4](https://cloud.githubusercontent.com/assets/22826481/23501998/040c890c-feeb-11e6-949e-428c2a44f4cf.PNG)
+![5](https://cloud.githubusercontent.com/assets/22826481/23501995/04099292-feeb-11e6-8923-6abfb93af8ca.PNG)
