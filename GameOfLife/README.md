@@ -9,8 +9,9 @@ It works on following rules -
 4] Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 
 ## Screenshots of the Game
-![1](https://cloud.githubusercontent.com/assets/22826481/23491829/97e285fe-feb5-11e6-97dc-bddc23811668.jpeg)
-![2](https://cloud.githubusercontent.com/assets/22826481/23491830/97e285b8-feb5-11e6-8913-933fd4a75618.jpeg)
-![3](https://cloud.githubusercontent.com/assets/22826481/23491832/97e38e36-feb5-11e6-87af-1d2c8e962b8b.jpeg)
-![4](https://cloud.githubusercontent.com/assets/22826481/23491831/97e2c654-feb5-11e6-8dd1-5a44725a47fb.jpeg)
-![5](https://cloud.githubusercontent.com/assets/22826481/23491833/97e3fc4a-feb5-11e6-9355-c6c8924a425a.jpeg)
+![1](https://cloud.githubusercontent.com/assets/22826481/23501537/18cc69d6-fee9-11e6-8b0c-491a4464aa1f.PNG)
+![2](https://cloud.githubusercontent.com/assets/22826481/23501540/18dcf512-fee9-11e6-9201-10468b09d709.PNG)
+![3](https://cloud.githubusercontent.com/assets/22826481/23501538/18dc13c2-fee9-11e6-9bea-bf3f24556a96.PNG)
+![4](https://cloud.githubusercontent.com/assets/22826481/23501539/18dc2aec-fee9-11e6-8fe7-c91d102fc925.PNG)
+![5](https://cloud.githubusercontent.com/assets/22826481/23501541/18de84d6-fee9-11e6-8484-f62149f2a726.PNG)
+
