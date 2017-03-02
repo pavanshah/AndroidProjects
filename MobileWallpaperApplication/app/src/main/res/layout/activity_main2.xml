@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pavan.wallpaperapplication.MainActivity2"
+    android:background="@drawable/wallpaper1"
+    >
+
+
+    <ImageView
+        android:id="@+id/wallpaper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+    />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/facebook"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/game"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        />
+
+
+    <ImageView
+        android:id="@+id/call"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/call"
+        android:layout_above="@+id/mainbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/gallery"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/gallery"
+        android:layout_above="@+id/mainbutton"
+        android:layout_toRightOf="@+id/call"
+        android:layout_marginLeft="30dp"
+
+        />
+
+
+    <ImageView
+        android:id="@+id/gmail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/gmail"
+        android:layout_above="@+id/mainbutton"
+        android:layout_toRightOf="@+id/gallery"
+        android:layout_marginLeft="30dp"
+        />
+
+    <ImageView
+        android:id="@+id/navigate"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/navigate"
+        android:layout_above="@+id/mainbutton"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        />
+
+    <Button
+        android:id="@+id/mainbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set As Wallpaper"
+        android:background="@color/colorPrimary"
+        android:textColor="#FFFFFF"
+        android:textSize="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="30dp"
+        />
+
+</RelativeLayout>
