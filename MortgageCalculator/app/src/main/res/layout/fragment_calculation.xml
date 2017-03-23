@@ -1,0 +1,252 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pavanshah.mortgagecalculator.MainActivity$PlaceholderFragment">
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/property_info"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!--<TextView
+            android:id="@+id/textViewPropertyType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/property_type"
+
+            />-->
+
+        <fragment
+            android:id="@+id/place_autocomplete_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+
+
+            />
+
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/place_autocomplete_fragment">
+
+                <RadioGroup
+                    android:id="@+id/radioGroupPropertyType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                <RadioButton
+                    android:id="@+id/radioButtonHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/house"
+                    android:layout_weight="33"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonTownHouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/townhouse"
+                    android:checked="true"
+                    android:layout_weight="33"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radioButtonCondo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/condo"
+                    android:layout_weight="33"
+                    />
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout1"
+            >
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:hint="City"
+                android:id="@+id/editTextCity"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_weight="33"
+                android:inputType="text"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerStates"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearLayout1"
+                android:entries="@array/states_array"
+                android:layout_weight="34"
+                ></Spinner>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Zipcode"
+                android:id="@+id/editTextZipcode"
+                android:layout_toRightOf="@+id/spinnerStates"
+                android:layout_below="@+id/linearLayout1"
+                android:layout_weight="33"
+                android:inputType="number"
+                />
+
+        </LinearLayout>
+
+
+<!--
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street Address"
+            android:id="@+id/editTextStreetAddress"
+            android:layout_below="@+id/radioGroupPropertyType"
+            />
+-->
+
+
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textViewLoanInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loan_info"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <LinearLayout
+        android:id="@+id/relative2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+
+
+        <EditText
+            android:id="@+id/editTextPropertyPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Property Price"
+            android:inputType="numberDecimal"
+            />
+
+        <EditText
+            android:id="@+id/editTextDownPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Down Payment"
+            android:layout_toRightOf="@+id/editTextPropertyPrice"
+            android:layout_below="@id/textViewLoanInfo"
+            android:inputType="numberDecimal"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextAPR"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Annual Percentage Rate"
+            android:layout_below="@id/editTextDownPayment"
+            android:inputType="numberDecimal"
+            />
+
+        <Spinner
+            android:id="@+id/spinnerYears"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/editTextAPR"
+            android:entries="@array/apr"
+            android:layout_below="@+id/editTextDownPayment"
+            ></Spinner>
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editTextAPR"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/buttonCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate"
+            android:layout_below="@+id/textViewResult"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/newCalculation"
+            android:text="New Calculation"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <Button
+            android:id="@+id/saveCalculation"
+            android:text="Save Calculation"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
