@@ -1,0 +1,421 @@
+<!--
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.EditProfile">
+-->
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="layout.EditProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+<!--          <android.support.v7.widget.AppCompatImageView
+              android:layout_width="100dp"
+              android:layout_height="100dp"
+             android:src="@drawable/ami"
+              android:id="@+id/profilepic"
+              android:layout_marginTop="10dp"
+              android:layout_alignParentTop="true"
+              android:clickable="true" />-->
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/profilepic"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentTop="true"/>
+
+            <LinearLayout
+                android:id="@+id/notification_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/profilepic"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Notifications:"
+                    android:id="@+id/notification_label"
+                    android:paddingTop="6dp"
+                    android:textSize="15sp"
+                    />
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/enable_notification_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enable"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/disable_notification_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Disable"
+                        />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/visibility_layout"
+                android:layout_toRightOf="@+id/profilepic"
+                android:layout_below="@+id/notification_layout"
+                android:orientation="horizontal"
+                android:paddingLeft="5dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Visibility:"
+                    android:paddingTop="6dp"
+                    android:textSize="15sp"/>
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/public_visibility_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Public"
+                        />
+
+                    <RadioButton
+                        android:id="@+id/friendsOnly_visibility_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Friends Only"
+                        />
+
+
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/screen_name_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profilepic"
+                >
+
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/screenname_label"
+                    android:text="Screen Name:"
+                    />
+
+                <EditText
+                    android:id="@+id/screenname_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/firstname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/screen_name_layout"
+                >
+
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/first_name_label"
+                    android:text="First Name:"/>
+
+                <EditText
+                    android:id="@+id/first_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lastname_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/firstname_layout"
+                >
+
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/last_name_label"
+                    android:text="Last Name"/>
+
+                <EditText
+                    android:id="@+id/last_name_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/address_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lastname_layout">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Address:"
+                    />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/address_text"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/profession_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address_layout">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Profession:"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/profession_text"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/aboutme_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profession_layout">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="About Me:"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/aboutme_text"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/interests_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/aboutme_layout">
+
+                <TextView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:text="Interests:"
+                    />
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/interests_text"
+                    android:inputType="text"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/interests_layout"
+                android:orientation="vertical"
+                >
+
+                <Button
+                    android:id="@+id/update_profile_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="Update Profile"
+                    android:textColor="#FFFFFF"
+                    />
+                <Button
+                    android:id="@+id/logout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Log Out"
+                    />
+
+            </LinearLayout>
+
+
+           <!--<android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/sn"
+                android:layout_below="@id/profilepic">
+
+                <AutoCompleteTextView
+                    android:id="@+id/screenname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="screen name"
+                    android:textColor="#000000"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+           </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/loc"
+                android:layout_below="@id/sn"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="city"
+                    android:textColor="#000000"
+                    android:inputType="text"
+                    android:maxLines="1"
+                     />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/prof"
+                android:layout_below="@id/loc"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/profession"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="profession"
+                    android:textColor="#000000"
+                    android:inputType="text"
+                    android:maxLines="1"
+                     />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/in"
+                android:layout_below="@id/prof">
+
+                <AutoCompleteTextView
+                    android:id="@+id/interests"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="interests"
+                    android:textColor="#000000"
+                    android:inputType="text"
+                    android:maxLines="1" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:id="@+id/am"
+                android:layout_below="@id/in">
+
+                <AutoCompleteTextView
+                    android:id="@+id/aboutme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="aboutme"
+                    android:textColor="#000000"
+                    android:inputType="textMultiLine"
+                    android:maxLines="3" />
+
+            </android.support.design.widget.TextInputLayout>-->
+
+                    <!--<Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@id/am"
+                    android:id="@+id/uploadprofilepic"
+                    android:text="Choose Profile"
+                    android:background="@android:color/darker_gray"
+                    android:textColor="@android:color/white"/>
+
+                    <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_below="@id/uploadprofilepic"
+                    android:text="Save Profile"
+                    android:background="@color/colorPrimary"
+                    android:textColor="@android:color/white"/>-->
+
+        </RelativeLayout>
+    </ScrollView>
+

@@ -1,0 +1,76 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.UploadFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/textPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Whats on your mind ?"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:inputType="textLongMessage"
+                android:maxLines="3"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <!-- TODO: Update blank fragment layout -->
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/tp"
+             android:id="@+id/uplaodedImage"
+         />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/uplaodedImage"
+            android:orientation="horizontal">
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Capture"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="10dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:id="@+id/captureButton"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Gallery"
+            android:layout_toRightOf="@id/captureButton"
+            android:layout_marginRight="20dp"
+            android:textAlignment="center"
+            android:layout_marginLeft="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:id="@+id/galleryButton"/>
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:paddingLeft="20dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:layout_toRightOf="@id/galleryButton"
+            android:text="Upload"
+            android:id="@+id/uploadButton"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

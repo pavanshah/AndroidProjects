@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:id="@+id/ruserprofilepic"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"/>
+    <TextView
+        android:id="@+id/requestname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textAlignment="textStart"
+        android:layout_toRightOf="@id/ruserprofilepic"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:shadowColor="@color/background"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="@android:color/black"
+        android:text="Name" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/cross"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_delete"
+            android:background="@android:color/white"
+            />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_input_add"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/tick"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/white"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

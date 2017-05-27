@@ -1,0 +1,56 @@
+<LinearLayout
+    android:id="@+id/messageFragment"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layout.MessageFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Messages"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:background="@color/background"
+            android:layout_marginTop="5dp"
+            android:id="@+id/messages"
+            />
+        <ListView
+            android:id="@+id/chatlistview"
+            android:layout_below="@id/messages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profiles"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:background="@color/background"
+            android:id="@+id/messageprofile"
+            android:layout_below="@id/chatlistview"/>
+
+        <ListView
+            android:id="@+id/messageprofilelistview"
+            android:layout_below="@id/chatlistview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

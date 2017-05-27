@@ -1,0 +1,91 @@
+<LinearLayout
+           xmlns:android="http://schemas.android.com/apk/res/android"
+           xmlns:tools="http://schemas.android.com/tools"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           tools:context="layout.SearchFragment"
+           android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/searchtab">
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="Email Search"
+        android:id="@+id/emailsearch"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADD"
+        android:id="@+id/addsearch"
+        />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pending Requests"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:background="@color/background"
+        android:layout_marginTop="5dp"
+        android:id="@+id/invitationlabel"
+        android:layout_below="@id/searchtab"/>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_below="@id/invitationlabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </ListView>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pending Invitations"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:background="@color/background"
+
+        android:id="@+id/requestlabel"
+            android:layout_below="@id/listView"/>
+
+        <ListView
+            android:id="@+id/listView2"
+            android:layout_below="@id/requestlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:background="@color/background"
+            android:textSize="20dp"
+            android:text="Profiles"
+            android:id="@+id/searchlabel"
+            android:layout_below="@id/listView2"/>
+
+        <ListView
+            android:id="@+id/listView3"
+
+            android:layout_below="@id/searchlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+</LinearLayout>
+
