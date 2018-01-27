@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context="com.pvanshah.sjsuquizapplication.StudentProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/studentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:hint="Student Name"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/noSubmissions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="No Submissions Available Yet :-("
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            />
+
+        <LinearLayout
+            android:id="@+id/studentProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Results -"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:textColor="@android:color/black"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Quiz Name"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:text="Quiz Score"
+                    android:textColor="@android:color/black"
+                    android:textSize="20dp"
+                    />
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/quizResultList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+            </ListView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

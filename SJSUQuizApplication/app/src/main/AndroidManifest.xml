@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pvanshah.sjsuquizapplication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".student.base.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginSignupActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ProfessorHomeActivity"
+            android:theme="@style/ProfessorTheme" />
+        <activity
+            android:name=".CreateQuiz"
+            android:theme="@style/ProfessorTheme" />
+        <activity android:name=".student.activities.LoginActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".student.activities.AvailableQuizesActivity" />
+        <activity android:name=".student.activities.QuizActivity" />
+        <activity android:name=".student.activities.AccountActivity" />
+        <activity
+            android:name=".StudentProfileActivity"
+            android:theme="@style/ProfessorTheme"></activity>
+        <activity
+            android:name=".QuizResultActivity"
+            android:theme="@style/ProfessorTheme"></activity>
+    </application>
+
+</manifest>

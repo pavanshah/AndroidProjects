@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/quizEntry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        >
+
+        <TextView
+            android:id="@+id/QuizName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Quiz Name"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/QuizScore"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

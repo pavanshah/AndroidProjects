@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/name_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="@string/name"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/email_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_ll"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="2"
+            android:gravity="center_vertical"
+            android:text="@string/email"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/email"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/score_txt"
+        style="@android:style/TextAppearance.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_ll"
+        android:layout_marginTop="20dp"
+        android:text="@string/scores"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="@color/colorAccent" />
+
+
+    <ListView
+        android:id="@+id/score_lst"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/sign_out"
+        android:layout_below="@id/score_txt"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/sign_out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:text="@string/sign_out"
+        android:textAppearance="@android:style/TextAppearance.Medium"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

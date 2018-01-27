@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "400064514879",
+    "firebase_url": "https://sjsuquizapplication-b23ca.firebaseio.com",
+    "project_id": "sjsuquizapplication-b23ca",
+    "storage_bucket": "sjsuquizapplication-b23ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400064514879:android:b9d7f7c7ef181cd1",
+        "android_client_info": {
+          "package_name": "com.pvanshah.sjsuquizapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400064514879-a6bsbanc1k7vunq8i1fvbnf76ojjq8kc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHAsJixPq-emYFryc1aidXILdQYtgDdlU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
