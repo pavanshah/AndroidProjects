@@ -9,10 +9,5 @@ It works on following rules -</br>
 4] Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</br>
 
 ## Screenshots of the Game
-![gameoflife](https://user-images.githubusercontent.com/22826481/38062356-4d156230-32a8-11e8-9194-2b9ee403d0d5.gif)</br>
-![1](https://cloud.githubusercontent.com/assets/22826481/23501537/18cc69d6-fee9-11e6-8b0c-491a4464aa1f.PNG)
-![2](https://cloud.githubusercontent.com/assets/22826481/23501540/18dcf512-fee9-11e6-9201-10468b09d709.PNG)
-![3](https://cloud.githubusercontent.com/assets/22826481/23501538/18dc13c2-fee9-11e6-9bea-bf3f24556a96.PNG)
-![4](https://cloud.githubusercontent.com/assets/22826481/23501539/18dc2aec-fee9-11e6-8fe7-c91d102fc925.PNG)
-![5](https://cloud.githubusercontent.com/assets/22826481/23501541/18de84d6-fee9-11e6-8484-f62149f2a726.PNG)
+![quiz](https://user-images.githubusercontent.com/22826481/38062516-275c04da-32a9-11e8-855f-8ef730d049b5.gif)
 
