@@ -8,6 +8,7 @@
    
 
 ## Screenshots of the application
+![wallpaper](https://user-images.githubusercontent.com/22826481/38062470-e9c0360a-32a8-11e8-8712-c11d0551187f.gif)</br>
 ![1](https://cloud.githubusercontent.com/assets/22826481/23501997/040a2176-feeb-11e6-8c1b-98b7603b703d.PNG)
 ![2](https://cloud.githubusercontent.com/assets/22826481/23501994/04083654-feeb-11e6-94a8-f4d4f4f226c0.PNG)
 ![3](https://cloud.githubusercontent.com/assets/22826481/23501996/0409cb72-feeb-11e6-91e4-eacbea405af4.PNG)
