@@ -7,6 +7,6 @@
 * Google maps and location API and SQLite database are used for improving performance.</br>
 
 ## Screenshots of the app
-![mortgagecalculator](https://cloud.githubusercontent.com/assets/22826481/24686340/179844d8-1968-11e7-932e-36e03cf9493a.gif)
+![mortgagecalculator](https://user-images.githubusercontent.com/22826481/38062498-0bd939bc-32a9-11e8-8acb-6bb0e46444f7.gif)
 
 
