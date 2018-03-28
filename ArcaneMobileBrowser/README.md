@@ -12,6 +12,7 @@
    It gives you a smooth and fast browsing experience by eliminating intermediate steps.
 
 ## Screenshots of browser
+![arcane](https://user-images.githubusercontent.com/22826481/38062415-934873be-32a8-11e8-8a2b-3099a8a30b2f.gif)<br>
 ![1](https://cloud.githubusercontent.com/assets/22826481/21764951/a0300466-d61a-11e6-8359-468fe3f8450f.PNG)
 ![2](https://cloud.githubusercontent.com/assets/22826481/21764956/a3fb44fc-d61a-11e6-8287-09036cd75ed0.PNG)
 ![3](https://cloud.githubusercontent.com/assets/22826481/21764959/a7553e28-d61a-11e6-8f1c-48a848654879.PNG)
