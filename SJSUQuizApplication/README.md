@@ -1,13 +1,10 @@
-# Conway's Game Of Life
+# SJSU Quiz Appliation
 
-## What is Conway's Game Of Life?</br>
-Conway's game of life is a cellular evolution game. It creates certain cellular patterns based on different rules.</br>
-It works on following rules -</br>
-1] Any live cell with fewer than two live neighbours dies, as if caused by underpopulation.</br>
-2] Any live cell with two or three live neighbours lives on to the next generation.</br>
-3] Any live cell with more than three live neighbours dies, as if by overpopulation.</br>
-4] Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</br>
+With SJSU Quiz application, professors can create quizzes on the fly and students can attempt the quiz using their smartphones.<br>
+The main motivation behind this project is to have a better communication with students who don’t have English as their first language.<br>
+These students face problems in expressing their issues and understandings. SJSU Quiz application helps them by highlighting their issues to their professor with graphics and smart analytics.<br>
+Developed in native android, Used Firebase real-time database as the RESTFul backend for the application.<br>
 
-## Screenshots of the Game
+## Screenshots of the App
 ![quiz](https://user-images.githubusercontent.com/22826481/38062516-275c04da-32a9-11e8-855f-8ef730d049b5.gif)
 
